@@ -76,6 +76,8 @@ Revenir en mode NORMAL : `Esc`<br>
 
 ## Déplacements :
 Gauche / Bas / Haut / Droite : `h` / `j` / `k` / `l`<br>
+Monter d'une demi page : `Ctrl+U`<br>
+Descendre d'une ligne : `Ctrl+D`<br>
 Début / fin de mot : `w` / `b` / `e`<br>
 Début / fin de ligne : `0` / `$`<br>
 Début / fin de fichier : `gg` / `G`<br>
