@@ -1,5 +1,4 @@
-Un proxy ou Mandataire HTTP est un serveur qui sert d'intermédiaire entre un client et un serveur internet, 
-surtout pour le trafic web (HTTP/HTTPS).
+Un proxy ou Mandataire HTTP est un serveur qui sert d'intermédiaire entre un client et un serveur internet, surtout pour le trafic web (HTTP/HTTPS). Il agit donc à la couche 7 (Application) du model OSI.
 
 
 ROLE DU PROXY :

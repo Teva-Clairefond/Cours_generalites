@@ -33,7 +33,8 @@ Explications :
             # Attribue une adresse IP locale statique à la carte LAN qui héberge le serveur DHCP
             # Ne dois pas être l'adresse du sous-réseau, donc ne dois pas terminer par .0 puisque c'est le sous-réseau qui termine de cette manière
         netmask 255.255.255.0
-
+        gateway 192.168.1.2
+            # Souvent dans un réseau NAT lié à des machines virtuelles, il y a la machine hôte sur X.X.X.1 et la gateway sur X.X.X.2.
 
 2) Configuration du serveur DHCP :
 

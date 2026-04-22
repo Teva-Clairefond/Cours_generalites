@@ -29,7 +29,7 @@ Explications :
             2 - Le client génère une clé de session temporaire (symétrique, ex. AES-256) pour chiffrer les données.
             3 - Le client chiffre cette clé symétrique avec la clé publique du serveur et l’envoie au serveur.
             4 - Le serveur déchiffre avec sa clé privée et obtient la même clé symétrique. Cette clé symétrique permettra l'échange pour la session.
-        RSA (Rivest–Shamir–Adleman) : Algorythme de cryptographie asymétrique (clé publique / clé privée).
+        RSA (Rivest–Shamir–Adleman) : Algorithme de cryptographie asymétrique (clé publique / clé privée).
             Chaque certificat utilise une clé privée (à garder secrète sur le serveur) et une clé publique (que le client connaît via le certificat).
         Certificat
             Public_Key : Donnée au client par le serveur, sert a chiffrer

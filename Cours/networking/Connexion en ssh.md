@@ -131,5 +131,15 @@ Cas B] Connexion SSH via mdp client :
 
     3 - Effectuer la connexion ssh depuis la machine hote
 
-        ssh -p 2222 teva@localhost
+        ssh -p 2222 teva@127.0.0.1
             # Puis rentrer le mdp
+
+        # IMPORTANT : L'adresse IP cible de connexion doit bien être 127.0.0.1 et non localhost. En effet VMware n'écoute que sur le port IPV4 et non sur le port IPV6...
+        Ainsi quand on écrit 'localhost', c'est le port IPV6 auquel le paquet va être transmit en priorité.
+
+        En marquant 127.0.0.1, on est sûr que c'est le port 2222 IPV4 qui va le recevoir.
+
+        NB : 
+            Si l'on veut écouter (ou émettre) à l'adresse IPV4 de toutes les interfaces réseau : '0.0.0.0'
+            Si l'on veut écouter (ou émettre) au loopback IPV6 : '::1'
+            Si l'on veut écouter (ou émettre) à l'adresse IPV6 de toutes les interfaces réseau : '::'

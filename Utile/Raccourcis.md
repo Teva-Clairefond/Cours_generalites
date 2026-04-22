@@ -21,7 +21,9 @@ Indentation : `Tab` / `Shift+Tab`<br>
 
 ## Rechercher & remplacer dans le fichier :
 Rechercher : `Ctrl+F`<br>
+Rechercher dans tous les fichiers : ``Ctrl+Shift+F`` <br>
 Remplacer : `Ctrl+H`<br>
+Remplacer dans tous les fichiers : ``Ctrl+Shift+H`` <br>
 Match suivant / précédent : `Enter` / `Shift+Enter`<br>
 Sélectionner toutes les occurrences de la recherche : `Alt+Enter`<br>
 
@@ -42,6 +44,7 @@ Fermer l’onglet : `Ctrl+W`<br>
 Réouvrir onglet fermé : `Ctrl+Shift+T`<br>
 Afficher/masquer le panneau du bas (où se trouve le terminal) : `Ctrl + J`
 Acceder à Codex : `Ctrl + Shift + Q`
+Ouvrir l'aperçu markdown : `Ctrl+Shift+V` <br>
 
 ## Git (très pratique) :
 Vue Source Control : `Ctrl+Shift+G`<br>
@@ -88,6 +91,7 @@ Supprimer caractère : `x`<br>
 Supprimer mot : `dw`<br>
 Supprimer jusqu’à fin de ligne : `d$`<br>
 Supprimer ligne : `dd`<br>
+Ajouter une ligne : `o<Esc>`<br>
 Copier (yank) 3 ligne : `3yy`<br>
 Copier 3 mots : `y3w` <br>
 Coller après / avant : `p` / `P`<br>
