@@ -52,10 +52,10 @@ Explications :
             # Durée du bail (lease) pour une IP
 
         subnet 192.168.1.0 netmask 255.255.255.0 {
-        range 192.168.1.100 192.168.1.200;
-            # La range ne doit pas couvrir l'adresse IP fixe du serveur DHCP pour qu'il n'y ait pas de conflits
-        option routers ip_de_la_LAN;
-        option broadcast-address 192.168.1.255;
+            range 192.168.1.100 192.168.1.200;
+                # La range ne doit pas couvrir l'adresse IP fixe du serveur DHCP pour qu'il n'y ait pas de conflits
+            option routers ip_de_la_gateway;
+            option broadcast-address 192.168.1.255;
         }
         # Définition du réseau à distribuer, c'est l'interface LAN qui représente le routeur côté réseau local
         

@@ -1,5 +1,6 @@
 # Installation d'un dépot :
 
+```bash
 sudo apt update
 sudo apt upgrade
 
@@ -29,3 +30,4 @@ echo "deb [signed-by=/usr/share/keyrings/mariadb.gpg] https://deb.mariadb.org/10
 sudo apt update
 
 sudo apt install mariadb
+```

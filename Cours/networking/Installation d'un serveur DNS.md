@@ -24,9 +24,12 @@ Installation d'un serveur DNS :
 
 
     sudo nano /etc/bind/named.conf.local
-        zone "exemple.local" {      # Déclaration d'une zone DNS nommée exemple.local
-            type master;    # Ce serveur est le maître (source) pour cette zone ; c’est lui qui contient le fichier de zone d’origine. (Autre valeur : slave pour esclave)
-            file "/etc/bind/db.exemple.local";  chemin du fichier de zone qui contient les enregistrements DNS (A, NS, MX, etc.) pour cette zone.
+        zone "exemple.local" {      
+            # Déclaration d'une zone DNS nommée exemple.local
+            type master;    
+                # Ce serveur est le maître (source) pour cette zone ; c’est lui qui contient le fichier de zone d’origine. (Autre valeur : slave pour esclave)
+            file "/etc/bind/db.exemple.local"; 
+                # chemin du fichier de zone qui contient les enregistrements DNS (A, NS, MX, etc.) pour cette zone.
         };
 
 3) Création du fichier de zone DNS
@@ -65,7 +68,7 @@ Installation d'un serveur DNS :
         pc1     IN      A       192.168.1.20
         imprimante IN   A       192.168.1.30
             # Exemple d’hôtes dans le LAN
-            # Tous les noms que l'on souhaite résoudre doivent se trouver dans le facileichier
+            # Tous les noms que l'on souhaite résoudre doivent se trouver dans le fichier
 
     sudo chown root:bind /etc/bind/db.exemple.local
         # Le fichier a pour propriétaire l'utilisateur root et le groupe bind (groupe qui peut gérer le serveur DNS)
@@ -88,7 +91,7 @@ Installation d'un serveur DNS :
 
 6) Configuration du serveur DHCP :
 
-    # Voir le fichier "Installation d'un serveur DHCP"
+    # Voir le fichier [Installation d'un serveur DHCP](/Cours/networking/Installation%20d'un%20serveur%20DHCP.md)
 
 7) Tester la résolution DNS : 3 options
 

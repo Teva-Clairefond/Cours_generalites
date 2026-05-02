@@ -216,12 +216,12 @@ II] Passage en FTPS :
     
     VERSION COPIABLE :
 
-        sudo openssl req -x509 -nodes -newkey rsa:4096 \
-            -keyout /etc/ssl/private/vsftpd.key \
-            -out /etc/ssl/certs/vsftpd.crt \
-            -days 3650 \
-            -config /tmp/vsftpd_openssl.cnf \
-            -extensions v3_req
+sudo openssl req -x509 -nodes -newkey rsa:4096 \
+    -keyout /etc/ssl/private/vsftpd.key \
+    -out /etc/ssl/certs/vsftpd.crt \
+    -days 3650 \
+    -config /tmp/vsftpd_openssl.cnf \
+    -extensions v3_req
 
 
     3) Vérifications 1 :
@@ -231,7 +231,7 @@ II] Passage en FTPS :
             # openssl x509 Utilise la sous-commande x509 d’OpenSSL : permet de lire, afficher ou convertir un certificat X.509
             # -in /etc/ssl/certs/vsftpd.crt : Chemin du certificat à analyser
             # -noout : Demande à OpenSSL de ne pas afficher le certificat encodé en Base64 (PEM).
-                # Sans cette option, tu aurais aussi tout le bloc -----BEGIN CERTIFICATE----- ... -----END CERTIFICATE----- affiché → pas utile pour la lecture.
+                # Sans cette option, il y aurait aussi tout le bloc -----BEGIN CERTIFICATE----- ... -----END CERTIFICATE----- affiché → pas utile pour la lecture.
             # -text : Demande à OpenSSL d’afficher les informations du certificat en clair (lisibles par un humain) → DN, validité, extensions, SAN, etc
             # | grep -A2 "Subject Alternative Name" :
                 # | : envoie la sortie de la commande précédente vers grep.
