@@ -44,6 +44,18 @@ iface eth0 inet static
         # Serveur DNS qui doit être contacté pour la résolution de nom de domaine. S'il y a un serveur DNS local mettre son adresse.
 ```
 
+Version copiable : 
+
+```bash
+auto eth0
+iface eth0 inet static
+    address 192.168.1.100
+    netmask 255.255.255.0
+    gateway 192.168.1.2
+    dns-nameservers 8.8.8.8 8.8.4.4
+```
+
+
 **IMPORTANT : Je le rappelle mais souvent dans VMware en NAT l'ip xxx.xxx.xxx.1 est utilisée par la machine hôte donc la gateway deviens xxx.xxx.xxx.2 !**
 
 

@@ -71,4 +71,9 @@ git remote add origin https://github.com/user/repo.git
 
 ---
 
+## Pour le premier push :
+
+**git push --set-upstream origin main**
+
+
 If you want, I can show a real workflow (e.g., pushing your first project to GitHub vs contributing to an existing repo).
